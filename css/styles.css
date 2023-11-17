@@ -189,11 +189,6 @@ button:focus {
     color: #2E2F42;
 }
 
-.doing-section h2 {
-    text-align: center;
-}
-
-
 
 .services-section h2 {
     font-size: 36px;
@@ -202,6 +197,14 @@ button:focus {
     letter-spacing: 0.72px;
     text-transform: capitalize;
     color: #2E2F42; 
+    text-align: center;
+}
+
+.services-section p {
+    display: flex;
+}
+
+.doing-section h2 {
     text-align: center;
 }
 
