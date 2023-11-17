@@ -1,5 +1,10 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 header {
@@ -13,7 +18,6 @@ ul {
 
 li {
     margin-left: 0;
-
 }
 
 .list {
@@ -23,12 +27,14 @@ li {
 }
 
 .container {
-    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .d-flex {
     display: flex;
-    align-items: center;
 }
 
 .header {
@@ -51,12 +57,12 @@ header .logo {
     line-height: 21px;
     letter-spacing: 0.54px;
     text-transform: uppercase;
-    color: #2E2F42; 
+    color: #2e2f42;
     margin-right: 76px;
 }
 
 header .logo a:hover {
-    color: #ff6b6b; 
+    color: #ff6b6b;
 }
 
 header .logo a:focus {
@@ -69,16 +75,15 @@ header nav {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.32px;
-    color: #2E2F42;
+    color: #2e2f42;
 }
-
 
 header .contact-info a {
     font-family: Roboto;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.32px;
-    color: #434455; 
+    color: #434455;
 }
 
 nav {
@@ -86,7 +91,7 @@ nav {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.32px;
-    color: #2E2F42;
+    color: #2e2f42;
 }
 
 nav a:hover {
@@ -98,7 +103,7 @@ nav a:focus {
 }
 
 header .contact-info a:hover {
-    color: #ff6b6b; 
+    color: #ff6b6b;
 }
 
 header .contact-info a:focus {
@@ -110,7 +115,7 @@ header .contact-info a:focus {
 }
 
 nav .link {
-    color: #2E2F42; 
+    color: #2e2f42;
 }
 
 .section {
@@ -118,33 +123,9 @@ nav .link {
     padding-bottom: 120px;
 }
 
-
-.team-section {
-    background-color: #F4F4FD;
-}
-
-footer {
-    background-color: #2E2F42;
-    color: #F4F4FD; 
-    font-family: Roboto;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.32px;
-}
-
-footer .logo {
-    font-family: Raleway;
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 21px;
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
-    color:#F4F4FD;
-}
-
 .main-section {
-    background-color: #2E2F42;
-    color: #FFFFFF;
+    background-color: #2e2f42;
+    color: #ffffff;
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
@@ -161,14 +142,14 @@ footer .logo {
 .main-section button {
     display: inline-flex;
     align-items: flex-start;
-    background: var(--IRIS, #4D5AE5);
+    background: var(--IRIS, #4d5ae5);
     color: white;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.64px;
     cursor: pointer;
-    border: none; 
+    border: none;
     padding: 16px 32px;
 }
 
@@ -180,15 +161,16 @@ button:focus {
     background-color: #ff6b6b;
 }
 
+/* CSS FOR SERVICES */
+
 .services-section h3 {
     display: flex;
     width: 264px;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
-    color: #2E2F42;
+    color: #2e2f42;
 }
-
 
 .services-section h2 {
     font-size: 36px;
@@ -196,7 +178,7 @@ button:focus {
     line-height: 40px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
-    color: #2E2F42; 
+    color: #2e2f42;
     text-align: center;
 }
 
@@ -204,8 +186,28 @@ button:focus {
     display: flex;
 }
 
+/* END OF SERVICES */
+
+/* CSS FOR WHAT WE DO */
+
 .doing-section h2 {
     text-align: center;
+}
+
+/* END OF WHAT WE DO */
+
+/* CSS FOR TEAM SECTION */
+.team-section {
+    background-color: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.team-caption {
+    background-color: white;
+    padding-top: 32px;
+    text-align: center;
+    padding-bottom: 32px;
 }
 
 .team-section h2 {
@@ -215,7 +217,7 @@ button:focus {
     letter-spacing: 0.72px;
     text-transform: capitalize;
     text-align: center;
-    color: #2E2F42;
+    color: #2e2f42;
 }
 
 .team-section h3 {
@@ -223,11 +225,89 @@ button:focus {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.4px;
-    color: #2E2F42;
+    color: #2e2f42;
+    margin-top: 0;
+}
+
+.team-section img {
+    width: 100%;
+    display: block;
 }
 
 .team-section p {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.32px;
+}
+
+/* END OF TEAM SECTION */
+
+footer {
+    background-color: #2e2f42;
+    color: #f4f4fd;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+footer .logo {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    color: #f4f4fd;
+}
+
+/* PORTFOLIO PAGE STYLING */
+.categories {
+    text-align: center;
+}
+
+.category-btn {
+    border-radius: 4px;
+    border: 1px solid #e7e9fc;
+    background-color: #f4f4fd;
+    color: #4d5ae5;
+    padding: 12px 24px;
+}
+
+.btn-active {
+    background-color: #404bbf;
+    color: white;
+    cursor: pointer;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project img {
+    width: 100%;
+    display: block;
+}
+
+@media (min-width: 428px) {
+    .container {
+        width: 428px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
 }
