@@ -13,6 +13,35 @@ ul {
 
 li {
     margin-left: 0;
+
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.container {
+    width: 1158px;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .d-flex {
+    align-items: center;
+}
+
+.header .list {
+    gap: 40px;
 }
 
 header .logo {
@@ -23,6 +52,7 @@ header .logo {
     letter-spacing: 0.54px;
     text-transform: uppercase;
     color: #2E2F42; 
+    margin-right: 76px;
 }
 
 header .logo a:hover {
@@ -83,6 +113,10 @@ nav .link {
     color: #2E2F42; 
 }
 
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 
 .team-section {
@@ -111,6 +145,9 @@ footer .logo {
 .main-section {
     background-color: #2E2F42;
     color: #FFFFFF;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
 }
 
 .main-section h1 {
@@ -132,6 +169,7 @@ footer .logo {
     letter-spacing: 0.64px;
     cursor: pointer;
     border: none; 
+    padding: 16px 32px;
 }
 
 button:hover {
@@ -150,6 +188,12 @@ button:focus {
     gap: 8px;
     color: #2E2F42;
 }
+
+.doing-section h2 {
+    text-align: center;
+}
+
+
 
 .services-section h2 {
     font-size: 36px;
